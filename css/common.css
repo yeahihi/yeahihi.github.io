@@ -1,17 +1,24 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 /* all */
 body, html {width:100%; height:100%;}
 body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-body,input,textarea,select,button,table{color:#666;font-size:14px;font-family:'Noto Sans KR','Malgun Gohic','맑은 고딕',sans-serif;line-height:1.1em}
+body,input,textarea,select,button,table{color:#222;font-size:14px;font-family:'Noto Sans KR','Malgun Gohic','맑은 고딕',sans-serif;line-height:1.25em}
 body{min-width:320px}
 img,fieldset{border:0;vertical-align:top}
 ul,ol{list-style:none}
 em,address{font-style:normal}
-a{color:#666;text-decoration:none}
+a{color:#f78916;text-decoration:none}
 a:hover {text-decoration:none}
 table{border-collapse:collapse}
 legend{font-size:0; line-height:0em; width:0px; height:0px; overflow:hidden}
-#wrap {width:100%; height:100%}
+small{font-size: 0.7em}
+#wrap {width:100%; height:100%; background: url(../image/bg.jpg) repeat center center; background-size: cover}
 
 .hide{font-size:0; line-height:0em; width:0px; height:0px; overflow:hidden}
+.container{display: flex; height: 100%; flex-direction: column; align-items: center; justify-content: center}
+.profile h2{margin-bottom: 15px; text-align: center}
+.profile dl{margin: 5px 0}
+.profile dt{width: 1em; text-align: center}
+.profile dt, .profile dd{display: inline-block}
